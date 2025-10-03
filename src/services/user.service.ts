@@ -3,7 +3,7 @@ import { createUser, getUser } from "../controllers/user.controller";
 
 const UserRouter: Router = Router();
 
-UserRouter.use("/create", createUser);
-UserRouter.use("/getUser", getUser);
+UserRouter.post("/create", createUser);
+UserRouter.get("/getUser", getUser);
 
 export default UserRouter;

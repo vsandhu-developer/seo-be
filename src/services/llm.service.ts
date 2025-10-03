@@ -3,6 +3,6 @@ import { userBusinessSetup } from "../controllers/llm.controller";
 
 const LLMRouter = Router();
 
-LLMRouter.use("/account-setup", userBusinessSetup);
+LLMRouter.post("/account-setup", userBusinessSetup);
 
 export default LLMRouter;

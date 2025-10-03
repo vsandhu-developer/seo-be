@@ -6,7 +6,7 @@ import {
 
 const BusinessRouter: Router = Router();
 
-BusinessRouter.use("/create", createBusiness);
-BusinessRouter.use("/info", getBusinessInfo);
+BusinessRouter.post("/create", createBusiness);
+BusinessRouter.get("/info", getBusinessInfo);
 
 export default BusinessRouter;
