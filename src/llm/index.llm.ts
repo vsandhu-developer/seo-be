@@ -1,16 +1,16 @@
 import type { AIMessage } from "@langchain/core/messages";
 import type { StructuredToolInterface } from "@langchain/core/tools";
-import { ChatGroq } from "@langchain/groq";
 import { MessagesAnnotation, StateGraph } from "@langchain/langgraph";
 import { ToolNode } from "@langchain/langgraph/prebuilt";
+import { ChatOpenAI } from "@langchain/openai";
 import { getWebsiteData, storeDataInDb } from "../tools/llm.tools";
 
 const tools: StructuredToolInterface[] = [getWebsiteData, storeDataInDb];
 const toolNode = new ToolNode(tools);
 
-export const llm = new ChatGroq({
-  apiKey: process.env.GROQ_API_KEY as string,
-  model: "openai/gpt-oss-120b",
+export const llm = new ChatOpenAI({
+  apiKey: process.env.OPENAI_API_KEY as string,
+  model: "gpt-5",
 }).bindTools(tools);
 
 async function shouldContinue({ messages }: typeof MessagesAnnotation.State) {
