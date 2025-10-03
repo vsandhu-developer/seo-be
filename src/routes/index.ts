@@ -7,7 +7,7 @@ const RouteHandler: Router = Router();
 
 RouteHandler.use("/api/v1/business", BusinessRouter);
 RouteHandler.use("/api/v1/auth", AuthRouter);
-RouteHandler.use("/api/v1/setup", LLMRouter);
+RouteHandler.use("/api/v1/llm", LLMRouter);
 RouteHandler.use("/api/v1/blog", BlogRouter);
 
 export default RouteHandler;

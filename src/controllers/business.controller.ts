@@ -33,8 +33,6 @@ export async function createBusiness(req: Request, res: Response) {
       },
     });
 
-    // here we also need to create data for keywords, CompetitiveAdvantage, Competitors, currentRanking
-
     const keywords = await prisma.keywords.createMany({
       data: payload.keywords.map((data) => ({
         keyword: data.keyword,
@@ -42,8 +40,6 @@ export async function createBusiness(req: Request, res: Response) {
         businessId: business.id,
       })),
     });
-
-    // CompetitiveAdvantage
 
     const competitiveAdvantage = await prisma.competitiveAdvantage.createMany({
       data: {

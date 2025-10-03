@@ -9,3 +9,10 @@ export const CREATE_USER = z.object({
 export const GET_USER = z.object({
   userId: z.string(),
 });
+
+export const LOGIN_USER = z
+  .object({
+    email: z.string(),
+    password: z.string(),
+  })
+  .strict();

@@ -6,3 +6,7 @@ export const ACCOUNT_SETUP = z
     userId: z.string("Please pass the correct user id"),
   })
   .strict();
+
+export const POST_BLOG = z.object({
+  userId: z.string(),
+});
