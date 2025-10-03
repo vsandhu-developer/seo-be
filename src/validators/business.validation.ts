@@ -34,3 +34,9 @@ export const CREATE_BUSINESS = z
     website: z.url("Ranking Website Url Is required"),
   })
   .strict();
+
+export const GET_BUSINESS_INFO = z
+  .object({
+    userId: z.string(),
+  })
+  .strict();

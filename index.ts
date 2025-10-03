@@ -4,7 +4,6 @@ import express, {
   type Request,
   type Response,
 } from "express";
-import { executeLLM } from "./src/llm/index.llm";
 import RouteHandler from "./src/routes";
 
 const PORT = process.env.PORT! || 3001;
@@ -24,4 +23,4 @@ app.listen(PORT, () =>
   console.log(`Server is running on http://localhost:${PORT}`)
 );
 
-await executeLLM();
+// await executeLLM();

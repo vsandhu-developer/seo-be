@@ -25,7 +25,7 @@ async function callModel(state: typeof MessagesAnnotation.State) {
   const response = await llm.invoke([
     {
       role: "system",
-      content: `You are a smart assistant. The url of the website will be provided to you. Use this user id for now 63e19a3e-6453-4b65-a48c-96517886b035 You have find business details
+      content: `You are a smart assistant. The url of the website will be provided to you. Use this user id passed by user You have find business details
       const keywordType = z.enum(["MUST_HAVE", "NICE_TO_HAVE"]);
      
       businessName: z.string("Name is required").min(3),
@@ -72,13 +72,12 @@ const workflow = new StateGraph(MessagesAnnotation)
 
 const app = workflow.compile();
 
-export async function executeLLM() {
+export async function executeLLM(websiteUrl: string, userId: string) {
   const response = await app.invoke({
     messages: [
       {
         role: "user",
-        content:
-          "Hi, Can you tell me about this website https://www.shawarmamoose.ca/",
+        content: `Hi, Can you tell me about this website ${websiteUrl} and this is the user id ${userId}`,
       },
     ],
   });

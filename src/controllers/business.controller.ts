@@ -1,7 +1,10 @@
 import type { Request, Response } from "express";
 import z, { ZodError } from "zod";
 import { prisma } from "../config/db.config";
-import { CREATE_BUSINESS } from "../validators/business.validation";
+import {
+  CREATE_BUSINESS,
+  GET_BUSINESS_INFO,
+} from "../validators/business.validation";
 
 export async function createBusiness(req: Request, res: Response) {
   try {
@@ -76,6 +79,44 @@ export async function createBusiness(req: Request, res: Response) {
       competitor,
       currentRanking,
     });
+  } catch (error) {
+    const flattError = z.flattenError(error as any);
+
+    if (error instanceof ZodError) {
+      return res
+        .status(400)
+        .json({ message: "Validation Error Occured", error: flattError });
+    }
+    return res.status(400).json({ message: "Error While Setting Up Business" });
+  }
+}
+
+export async function getBusinessInfo(req: Request, res: Response) {
+  try {
+    const body = req.body;
+    const payload = GET_BUSINESS_INFO.parse(body);
+
+    const businessInfo = await prisma.business.findUnique({
+      where: {
+        userId: payload.userId,
+      },
+      include: {
+        competitiors: true,
+        competitiveAdvantage: true,
+        currentRanking: true,
+        keywords: true,
+        User: {
+          select: {
+            username: true,
+            email: true,
+            createdAt: true,
+            updatedAt: true,
+          },
+        },
+      },
+    });
+
+    return res.status(200).json({ message: "Business Info", businessInfo });
   } catch (error) {
     const flattError = z.flattenError(error as any);
 
