@@ -1,0 +1,346 @@
+{
+  "id": "751441c3-f3fa-480c-845d-a50f037f66cd",
+  "businessName": "Shawarma Moose Toronto",
+  "businessType": "Restaurant / Turkish & Mediterranean Cuisine",
+  "businessDescription": "Shawarma Moose offers the best shawarma in Toronto with authentic Turkish and Mediterranean flavors. They provide online ordering for delivery and pickup, as well as catering for corporate events and gatherings. Menu includes shawarma wraps, plates, falafel, fresh salads, pita, and specialty Saj wraps, all made with fresh ingredients and available late night.",
+  "businessWebsiteUrl": "https://www.shawarmamoose.ca/",
+  "createdAt": "2025-10-03T05:48:24.676Z",
+  "updatedAt": "2025-10-03T05:48:24.676Z",
+  "userId": "30ead9b9-f3ea-466e-869f-b09ffbdd1f57",
+  "competitiors": [
+    {
+      "id": "8f761256-8c04-433a-bdf6-8cb47e7ed696",
+      "name": "Shawarma Empire",
+      "url": "https://www.shawarmaempire.com/",
+      "createdAt": "2025-10-03T05:48:25.150Z",
+      "updatedAt": "2025-10-03T05:48:25.150Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "75114de7-05bb-4405-8555-e6ed468ecb56",
+      "name": "KazaMaza",
+      "url": "https://www.kazamaza.com/",
+      "createdAt": "2025-10-03T05:48:25.150Z",
+      "updatedAt": "2025-10-03T05:48:25.150Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "77bcded1-8ff1-4478-911e-207b7e2923fa",
+      "name": "Maoz Falafel",
+      "url": "https://www.maozfalafel.com/",
+      "createdAt": "2025-10-03T05:48:25.150Z",
+      "updatedAt": "2025-10-03T05:48:25.150Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "5a7d1cd1-2a6a-46c9-ae59-b108d82e8686",
+      "name": "Kebab House",
+      "url": "https://www.kebabhouse.ca/",
+      "createdAt": "2025-10-03T05:48:25.150Z",
+      "updatedAt": "2025-10-03T05:48:25.150Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "1c391777-9248-473f-9052-53490cb58fe1",
+      "name": "Toronto Shawarma",
+      "url": "https://www.torontoshawarma.com/",
+      "createdAt": "2025-10-03T05:48:25.150Z",
+      "updatedAt": "2025-10-03T05:48:25.150Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    }
+  ],
+  "competitiveAdvantage": [
+    {
+      "id": "fe6373bb-7ea9-4ad6-9610-d011c73d9fa6",
+      "advantage": [
+        "Authentic Turkish and Mediterranean flavors",
+        "Fast online ordering and delivery",
+        "Comprehensive catering for offices and events",
+        "Fresh, high‑quality ingredients",
+        "Variety of shawarma, falafel, and Saj wraps",
+        "Late‑night hours (open until 3 AM)",
+        "Convenient central location on College St",
+        "Friendly, multilingual staff",
+        "Vegetarian & vegan options available",
+        "Competitive pricing and specials"
+      ],
+      "createdAt": "2025-10-03T05:48:24.977Z",
+      "updatedAt": "2025-10-03T05:48:24.977Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    }
+  ],
+  "currentRanking": [
+    {
+      "id": "0adee616-033b-468a-93c6-8ac91495cf57",
+      "website": "https://www.yelp.com/biz/shawarma-moose-toronto",
+      "ranking": "Top 10 Shawarma Restaurants in Toronto",
+      "createdAt": "2025-10-03T05:48:25.324Z",
+      "updatedAt": "2025-10-03T05:48:25.324Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    }
+  ],
+  "keywords": [
+    {
+      "id": "14b7362b-6081-49ed-89fb-97e33f9c4b37",
+      "keyword": "shawarma Toronto",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "193e9a9a-1a3f-4674-9dce-58605bca55ff",
+      "keyword": "Turkish cuisine Toronto",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "0bf79538-8124-48b0-82bf-6628a96cf8ad",
+      "keyword": "Mediterranean catering Toronto",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "2b910055-a2b8-4251-a447-6617d4e0da1b",
+      "keyword": "best shawarma in Toronto",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "c01b92b6-7d7c-4f96-b434-a21563184ce8",
+      "keyword": "online shawarma delivery",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "a118a432-0f93-4ce6-9399-f1d285c801da",
+      "keyword": "falafel Toronto",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "ac6a509d-57e7-4849-90e0-6a39277890b3",
+      "keyword": "Toronto food delivery",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "8b864587-35da-42bb-9019-96c997903b21",
+      "keyword": "late night food Toronto",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "e29a69bc-7e53-4247-86c0-89c14d4fb0ec",
+      "keyword": "catering for offices Toronto",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "978cff40-1032-48a5-b138-bb44d17f1d7e",
+      "keyword": "Shawarma Moose menu",
+      "keywordType": "MUST_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "fc1737ba-2b3b-44bc-a4e2-7b73342211e9",
+      "keyword": "saj wrap",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "740f4c82-d239-48fc-86de-3cd814253426",
+      "keyword": "Greek catering Toronto",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "72df6109-11ff-467a-ad7e-b2dfaf7524f2",
+      "keyword": "Toronto street food",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "e3f82216-c356-4ac2-907f-dd407404e71a",
+      "keyword": "vegan shawarma Toronto",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "1ac3088d-66de-44b2-ac4f-509519386efb",
+      "keyword": "pita bread Toronto",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "18105615-2b6e-4caf-b8c2-8bfa0eba7459",
+      "keyword": "Shawarma Moose reviews",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "aa1bfe6e-ffad-4ce4-996c-82a1113208f8",
+      "keyword": "Toronto halal food",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "7d3691a9-eacb-4ec8-a139-971818b5bea3",
+      "keyword": "Toronto lunch spots",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "588802e4-974d-429b-ae90-28488dd293c0",
+      "keyword": "Toronto food trucks",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "27a5f303-fef8-445f-83eb-596a8493d528",
+      "keyword": "Toronto restaurant catering",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "31887123-d264-41a8-94d2-8fe7f03f79f0",
+      "keyword": "Toronto quick bites",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "cc33d985-5bb3-469b-ab48-092abf54fce9",
+      "keyword": "Toronto food blog",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "e95ecc1a-a73f-4a4f-9976-1c880e481a52",
+      "keyword": "Toronto culinary tours",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "b1c11e86-25a2-4c18-b906-5aa4cdd759fb",
+      "keyword": "Toronto food delivery apps",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "b7293a76-1d56-4766-9fd3-7c7ff6801b80",
+      "keyword": "Toronto dining late night",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "5995d0ea-dadd-4e2b-96b6-353f78d6fb7d",
+      "keyword": "Toronto food specials",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "4bff49d2-9fe6-4669-af54-00ac2adb8863",
+      "keyword": "Toronto Mediterranean dishes",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "123f2348-4cfd-4a06-bb8d-2e8e6b4013b8",
+      "keyword": "Toronto family restaurants",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "5a6228bf-3483-419f-ba43-8290fe7e4304",
+      "keyword": "Toronto food promotions",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "4713e1c9-1f47-4b53-84e0-f5d7ff4796af",
+      "keyword": "Toronto food coupons",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "5002f407-7689-4d8f-b40c-354289f1eb3a",
+      "keyword": "Toronto restaurant deals",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    },
+    {
+      "id": "03726283-601f-43be-888c-b31d4d7579ae",
+      "keyword": "Toronto food events",
+      "keywordType": "NICE_TO_HAVE",
+      "createdAt": "2025-10-03T05:48:24.774Z",
+      "updatedAt": "2025-10-03T05:48:24.774Z",
+      "businessId": "751441c3-f3fa-480c-845d-a50f037f66cd"
+    }
+  ],
+  "User": {
+    "username": "Hakam Sandhu",
+    "email": "hakamsandhu2006@gmail.com",
+    "createdAt": "2025-10-03T05:38:39.635Z",
+    "updatedAt": "2025-10-03T05:38:39.635Z"
+  }
+}

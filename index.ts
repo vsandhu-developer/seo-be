@@ -23,4 +23,6 @@ app.listen(PORT, () =>
   console.log(`Server is running on http://localhost:${PORT}`)
 );
 
-// await executeLLM();
+// // await executeLLM();
+// const dummyData = JSON.stringify(blogData);
+// await generateBlogLLM(dummyData);

@@ -16,6 +16,7 @@ model User {
   createdAt  DateTime  @default(now())
   updatedAt  DateTime  @updatedAt
   businessId String?
+  Blog       Blog[]
 }
 
 enum KeywordType {
@@ -76,6 +77,7 @@ model Business {
   updatedAt            DateTime               @updatedAt
   User                 User                   @relation(fields: [userId], references: [id])
   userId               String                 @unique
+  Blog                 Blog[]
 }
 
 enum ConnectionPlatform {
@@ -96,4 +98,53 @@ model PublishConsole {
   publishAs          PublishAs
   createdAt          DateTime           @default(now())
   updatedAt          DateTime           @updatedAt
+}
+
+enum STATUS {
+  DRAFT
+  PUBLISH
+}
+
+model CustomField {
+  id           String   @id @default(uuid())
+  reading_time String
+  rating       Int
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  Blog         Blog[]
+}
+
+model Meta {
+  id              String   @id @default(uuid())
+  seo_title       String
+  seo_description String
+  focus_keyword   String
+  keywords        String[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  Blog Blog[]
+}
+
+model Blog {
+  id             String      @id @default(uuid())
+  title          String
+  slug           String
+  status         STATUS      @default(DRAFT)
+  content        String
+  excerpt        String
+  categories     String[]
+  tags           String[]
+  featured_media String
+  meta           Meta        @relation(fields: [metaId], references: [id])
+  customField    CustomField @relation(fields: [customFieldId], references: [id])
+  user           User        @relation(fields: [userId], references: [id])
+  business       Business    @relation(fields: [businessId], references: [id])
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+  metaId         String      @unique
+  customFieldId  String      @unique
+  userId         String
+  businessId     String
 }
