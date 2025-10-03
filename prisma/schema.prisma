@@ -1,0 +1,99 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String    @id @default(uuid())
+  username   String    @unique
+  email      String    @unique
+  password   String
+  business   Business?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  businessId String?
+}
+
+enum KeywordType {
+  MUST_HAVE
+  NICE_TO_HAVE
+}
+
+model Keywords {
+  id          String      @id @default(uuid())
+  keyword     String
+  keywordType KeywordType
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  Business    Business    @relation(fields: [businessId], references: [id])
+  businessId  String
+}
+
+model CompetitiveAdvantage {
+  id         String   @id @default(uuid())
+  advantage  String[]
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  Business   Business @relation(fields: [businessId], references: [id])
+  businessId String
+}
+
+model Competitors {
+  id         String   @id @default(uuid())
+  name       String
+  url        String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  Business   Business @relation(fields: [businessId], references: [id])
+  businessId String
+}
+
+model currentRanking {
+  id         String   @id @default(uuid())
+  website    String
+  ranking    String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  Business   Business @relation(fields: [businessId], references: [id])
+  businessId String
+}
+
+model Business {
+  id                   String                 @id @default(uuid())
+  businessName         String                 @unique
+  businessType         String
+  businessDescription  String
+  businessWebsiteUrl   String
+  keywords             Keywords[]
+  competitiveAdvantage CompetitiveAdvantage[]
+  competitiors         Competitors[]
+  currentRanking       currentRanking[]
+  createdAt            DateTime               @default(now())
+  updatedAt            DateTime               @updatedAt
+  User                 User                   @relation(fields: [userId], references: [id])
+  userId               String                 @unique
+}
+
+enum ConnectionPlatform {
+  WORDPRESS
+  WEBFLOW
+  SHOPIFY
+}
+
+enum PublishAs {
+  DRAFT
+  PUBLISH
+}
+
+model PublishConsole {
+  id                 String             @id @default(uuid())
+  autoPublish        Boolean            @default(false)
+  connectionPlatform ConnectionPlatform
+  publishAs          PublishAs
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+}
