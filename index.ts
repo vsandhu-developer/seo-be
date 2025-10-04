@@ -1,3 +1,4 @@
+import cors from "cors";
 import express, {
   urlencoded,
   type Application,
@@ -11,6 +12,11 @@ const app: Application = express();
 
 app.use(express.json());
 app.use(urlencoded({ extended: false }));
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+  })
+);
 
 // Routes
 app.use(RouteHandler);

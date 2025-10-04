@@ -18,7 +18,9 @@ export async function Register(req: Request, res: Response) {
         .status(400)
         .json({ message: "Validation Error Occured", error: flattError });
     }
-    return res.status(400).json({ message: "Error While Creating Account" });
+    return res
+      .status(400)
+      .json({ message: "Error While Creating Account", error: error });
   }
 }
 
@@ -46,15 +48,23 @@ export async function Login(req: Request, res: Response) {
       return res.status(400).json({ message: "Wrong Credentials" });
     }
 
-    return res.status(200).json({ user: user });
+    const userInfo = {
+      id: user.id,
+      email: user.email,
+      username: user.username,
+    };
+
+    return res.status(200).json({ message: "Login Success", user: userInfo });
   } catch (error) {
     const flattError = z.flattenError(error as any);
 
     if (error instanceof ZodError) {
       return res
         .status(400)
-        .json({ message: "Validation Error Occured", error: flattError });
+        .json({ message: "Login Validation Error ", error: flattError });
     }
-    return res.status(400).json({ message: "Error While Creating Account" });
+    return res
+      .status(400)
+      .json({ message: "Error While Logging In", error: error });
   }
 }
