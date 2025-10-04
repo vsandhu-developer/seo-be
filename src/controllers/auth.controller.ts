@@ -51,7 +51,7 @@ export async function Login(req: Request, res: Response) {
     const userInfo = {
       id: user.id,
       email: user.email,
-      username: user.username,
+      name: user.username,
     };
 
     return res.status(200).json({ message: "Login Success", user: userInfo });
